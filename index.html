@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>גיל הטיל — מגיע בטיל ומתקן הכל כרגיל | הופעות וסדנאות לילדים</title>
+<meta name="description" content="גיל הטיל — חוויה שמדליקה, מחברת ומעיפה קדימה. הופעות, מפגשים וסדנאות לילדים, כרטיסים למופעים ומוצרים מעוצבים. להזמנה: 050-334-0132.">
+<meta name="theme-color" content="#1a0f45">
+<meta property="og:title" content="גיל הטיל — מגיע בטיל ומתקן הכל כרגיל">
+<meta property="og:description" content="הופעות, מפגשים וסדנאות לילדים שמדליקות, מחברות ומעיפות קדימה. להזמנה: 050-334-0132.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://gilhatil.com/assets/design-full-v2.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Brand palette — aligned to gilhatil.com (deep purple + orange + gold + cyan) */
+  --space:#1a0f45; --space2:#2a1a6e; --space3:#3c2896;
+  --flame:#ff6a1a; --flame-d:#d24d06; --flame2:#ff8c42;
+  --gold:#ffc42e; --gold-d:#d99e00;
+  --sky:#45d3ff; --sky-d:#0d9fd6;
+  --ink:#241a4d; --muted:#6b6885; --cream:#fff7ea; --line:#ece7f5;
+  --wa:#25d366; --wa-d:#189a47;
+  --r-lg:26px; --r-md:18px; --r-sm:12px;
+  --shadow:0 22px 50px rgba(26,15,69,.16);
+  --maxw:1160px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Heebo',sans-serif;color:var(--ink);background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.btn,.logo-txt{font-family:'Fredoka','Heebo',sans-serif;font-weight:700}
+img{max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px;border-radius:6px}
+
+/* ===== Header ===== */
+header{position:fixed;top:0;right:0;left:0;z-index:80;padding:14px clamp(16px,4%,48px);display:flex;align-items:center;justify-content:space-between;gap:16px;transition:background .3s,padding .3s,box-shadow .3s}
+header.solid{background:rgba(20,11,54,.9);backdrop-filter:blur(12px);box-shadow:0 4px 24px rgba(0,0,0,.32);padding:9px clamp(16px,4%,48px)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
+.logo img{height:52px;width:auto;filter:drop-shadow(0 4px 10px rgba(0,0,0,.35));transition:height .3s}
+header.solid .logo img{height:44px}
+nav{display:flex;gap:6px}
+nav a{color:#e5dcff;text-decoration:none;font-size:15px;font-weight:500;padding:8px 13px;border-radius:999px;transition:color .2s,background .2s}
+nav a:hover{color:#fff;background:rgba(255,255,255,.1)}
+.head-actions{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.head-call{background:var(--flame);color:#fff;font-weight:700;padding:10px 20px;border-radius:999px;text-decoration:none;font-size:15px;box-shadow:0 4px 0 var(--flame-d);transition:transform .12s,box-shadow .12s;white-space:nowrap;font-family:'Fredoka',sans-serif}
+.head-call:hover{transform:translateY(-1px)}
+.head-call:active{transform:translateY(4px);box-shadow:none}
+.burger{display:none;flex-direction:column;gap:5px;background:rgba(255,255,255,.12);border:none;cursor:pointer;padding:11px;border-radius:12px}
+.burger span{display:block;width:22px;height:2.5px;background:#fff;border-radius:2px;transition:.25s}
+.burger.open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+/* Mobile menu */
+#mobileMenu{position:fixed;inset:0 0 auto 0;top:0;z-index:75;background:linear-gradient(180deg,var(--space),var(--space2));padding:88px 24px 30px;transform:translateY(-100%);transition:transform .35s cubic-bezier(.4,0,.2,1);box-shadow:0 20px 50px rgba(0,0,0,.4);display:flex;flex-direction:column;gap:4px}
+#mobileMenu.open{transform:translateY(0)}
+#mobileMenu a{color:#e5dcff;text-decoration:none;font-size:19px;font-weight:500;padding:15px 12px;border-bottom:1px solid rgba(255,255,255,.09);display:flex;align-items:center;gap:10px}
+#mobileMenu a:last-of-type{border:none}
+.menu-cta{margin-top:16px;display:flex;gap:10px}
+.menu-cta a{justify-content:center;flex:1;border-radius:999px!important;border:none!important;color:#fff!important;font-weight:700}
+@media(max-width:960px){nav,.head-call{display:none}.burger{display:flex}}
+
+/* ===== Hero ===== */
+.hero{position:relative;min-height:100svh;background:radial-gradient(120% 80% at 80% 0%,#3c2896 0%,var(--space2) 42%,var(--space) 100%);overflow:hidden;display:flex;align-items:center}
+#stars{position:absolute;inset:0;width:100%;height:100%}
+.planet{position:absolute;border-radius:50%;opacity:.9;pointer-events:none}
+.p1{width:88px;height:88px;top:15%;inset-inline-start:6%;background:radial-gradient(circle at 32% 30%,#ffb35a,#c2571b 70%);box-shadow:0 0 46px rgba(255,150,60,.35)}
+.p1::after{content:'';position:absolute;top:42%;left:-18%;width:136%;height:16%;border-radius:50%;border:5px solid rgba(255,220,150,.55);transform:rotate(-14deg)}
+.p2{width:40px;height:40px;top:20%;inset-inline-end:38%;background:radial-gradient(circle at 35% 30%,#9be8ff,#2179a8 75%);box-shadow:0 0 26px rgba(77,216,255,.4)}
+.moon{width:56px;height:56px;bottom:30%;inset-inline-start:16%;background:radial-gradient(circle at 35% 30%,#f5f2ea,#a8a291 80%);opacity:.65}
+.hero-inner{position:relative;z-index:5;max-width:var(--maxw);margin:0 auto;width:100%;padding:120px clamp(20px,5%,56px) 90px;display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center}
+.hero-content{opacity:1;animation:heroIn .9s cubic-bezier(.2,.7,.2,1)}
+@keyframes heroIn{from{transform:translateY(26px)}to{transform:none}}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,196,46,.14);border:1.5px dashed var(--gold);color:var(--gold);padding:8px 18px;border-radius:999px;font-size:14px;font-weight:700}
+.hero-content h1{color:#fff;font-size:clamp(36px,6vw,64px);line-height:1.12;margin-top:20px;letter-spacing:-.5px}
+.hero-content h1 .fl{color:var(--gold);display:inline-block}
+.hero-content h1 .em{background:linear-gradient(90deg,var(--flame2),var(--flame));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-content .sub{color:#cdbdf5;font-size:clamp(16px,2.2vw,21px);margin-top:18px;font-weight:300;line-height:1.7;max-width:30em}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:15px 30px;border-radius:999px;font-size:17px;font-weight:700;text-decoration:none;transition:transform .12s,box-shadow .12s,filter .12s;border:none;cursor:pointer;font-family:'Fredoka',sans-serif}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.04)}
+.btn:active{transform:translateY(4px);box-shadow:none!important}
+.btn-flame{background:var(--flame);color:#fff;box-shadow:0 5px 0 var(--flame-d)}
+.btn-gold{background:var(--gold);color:#5b4300;box-shadow:0 5px 0 var(--gold-d)}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 5px 0 var(--wa-d)}
+.hero-meta{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:22px}
+.relaunch{background:none;border:none;color:var(--sky);font-family:'Fredoka',sans-serif;font-size:14.5px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:6px;padding:6px 4px}
+.relaunch:hover{color:#8fe6ff}
+.next-show{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.06);border:1px solid rgba(77,216,255,.3);color:#d7ecff;padding:9px 18px;border-radius:999px;font-size:13.5px;text-decoration:none;transition:border-color .2s}
+.next-show:hover{border-color:var(--sky)}
+.next-show b{color:var(--sky)}
+/* Hero visual (Gil) */
+.hero-visual{position:relative;display:flex;align-items:flex-end;justify-content:center;min-height:520px;align-self:stretch}
+.hero-glow{position:absolute;bottom:6%;left:50%;transform:translateX(-50%);width:78%;height:78%;background:radial-gradient(circle,rgba(255,140,66,.4),rgba(255,196,46,.12) 45%,transparent 70%);filter:blur(6px);border-radius:50%;z-index:1;animation:glowPulse 4s ease-in-out infinite}
+@keyframes glowPulse{0%,100%{opacity:.75;transform:translateX(-50%) scale(1)}50%{opacity:1;transform:translateX(-50%) scale(1.06)}}
+.gil-wrap{position:relative;z-index:3;width:min(460px,86%);display:flex;justify-content:center;animation:gfloat 5s ease-in-out infinite 1.4s}
+@keyframes gfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+#gilPhoto{width:100%;filter:drop-shadow(0 26px 40px rgba(0,0,0,.4));opacity:1;animation:gilIn 1s cubic-bezier(.2,.7,.2,1)}
+@keyframes gilIn{from{transform:translateY(40px) scale(.96)}to{transform:none}}
+#rocketWrap{position:absolute;bottom:2%;inset-inline-end:4%;z-index:2;width:min(88px,16%);will-change:transform}
+#rocketWrap svg{width:100%;display:block;filter:drop-shadow(0 8px 20px rgba(255,106,26,.45))}
+.rocket-idle{animation:ridle 3.4s ease-in-out infinite}
+@keyframes ridle{0%,100%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-10px) rotate(-2deg)}}
+.flame{transform-origin:50% 0%;animation:flick .12s infinite alternate}
+@keyframes flick{from{transform:scaleY(1) scaleX(1)}to{transform:scaleY(1.35) scaleX(.82)}}
+#countdown{position:absolute;inset:0;z-index:6;display:flex;align-items:center;justify-content:center;pointer-events:none}
+#countNum{font-family:'Fredoka',sans-serif;font-size:clamp(80px,16vw,170px);font-weight:700;color:var(--gold);text-shadow:0 0 60px rgba(255,196,46,.6);opacity:0;transform:scale(.4)}
+#countNum.pop{animation:cpop .75s ease-out}
+@keyframes cpop{0%{opacity:0;transform:scale(.4)}25%{opacity:1;transform:scale(1.08)}70%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1.3)}}
+.hero-wave{position:absolute;bottom:-1px;left:0;right:0;z-index:4;line-height:0}
+.hero-wave svg{display:block;width:100%;height:clamp(48px,7vw,90px)}
+@media(max-width:880px){
+  .hero-inner{grid-template-columns:1fr;text-align:center;padding-top:100px;padding-bottom:60px;gap:6px}
+  .hero-content .sub{margin-inline:auto}
+  .cta-row,.hero-meta{justify-content:center}
+  .hero-visual{min-height:340px;order:2;margin-top:10px}
+  #gilPhoto{width:min(320px,72%)}
+  .p1{width:60px;height:60px}.p2{inset-inline-end:8%}
+}
+
+/* Floating scroll rocket */
+#scrollRocket{position:fixed;inset-inline-end:16px;bottom:10%;z-index:65;font-size:24px;transition:bottom .1s linear;pointer-events:none;transform:rotate(-45deg);filter:drop-shadow(0 4px 8px rgba(0,0,0,.3))}
+@media(max-width:760px){#scrollRocket{display:none}}
+
+/* ===== Sections ===== */
+section{padding:clamp(64px,9vw,104px) clamp(20px,5%,56px);position:relative}
+.wrap{max-width:var(--maxw);margin:0 auto}
+.sec-head{text-align:center;max-width:660px;margin:0 auto 52px}
+.tag{display:inline-block;padding:6px 18px;border-radius:999px;font-size:13px;font-weight:700;letter-spacing:.4px;font-family:'Fredoka',sans-serif}
+.tag-orange{background:#ffe6d6;color:#c2410c}
+.tag-blue{background:#dff1ff;color:#0369a1}
+.tag-gold{background:#fff2cf;color:#a16207}
+.tag-cyan{background:rgba(77,216,255,.16);color:var(--sky)}
+.tag-green{background:#dcfce7;color:#15803d}
+.sec-head h2{font-size:clamp(28px,4.4vw,42px);margin-top:14px;letter-spacing:-.5px}
+.sec-head p{color:var(--muted);margin-top:12px;font-size:16.5px;line-height:1.7}
+
+/* About */
+.about{background:#fff}
+.about-wrap{display:grid;grid-template-columns:1fr .9fr;gap:56px;max-width:1040px;margin:0 auto;align-items:center}
+@media(max-width:820px){.about-wrap{grid-template-columns:1fr;gap:34px}.about-visual{order:-1}}
+.about-txt h2{font-size:clamp(28px,4.4vw,40px);margin-top:14px;line-height:1.15}
+.about-txt p{color:#443f5c;font-size:17.5px;line-height:1.95;margin-top:16px}
+.about-tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.about-tags span{background:#fff1e2;color:#b45309;border-radius:999px;padding:8px 17px;font-size:14.5px;font-weight:700}
+.about-stats{display:flex;gap:26px;margin-top:28px;flex-wrap:wrap}
+.about-stats .st b{display:block;font-family:'Fredoka',sans-serif;font-size:30px;color:var(--flame);line-height:1}
+.about-stats .st span{font-size:13.5px;color:var(--muted)}
+.about-visual{position:relative;display:flex;justify-content:center}
+.about-badge{position:relative;width:min(400px,90%);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 50% 35%,var(--space3),var(--space2) 70%,var(--space));box-shadow:var(--shadow);display:flex;align-items:flex-end;justify-content:center;overflow:hidden;border:6px solid #fff;outline:3px solid var(--line)}
+.about-badge::before{content:'';position:absolute;inset:0;background-image:radial-gradient(2px 2px at 20% 30%,rgba(255,255,255,.8),transparent),radial-gradient(2px 2px at 70% 20%,rgba(255,196,46,.9),transparent),radial-gradient(1.6px 1.6px at 40% 65%,rgba(255,255,255,.6),transparent),radial-gradient(2px 2px at 85% 55%,rgba(77,216,255,.8),transparent)}
+.about-badge img{position:relative;z-index:2;width:96%;filter:drop-shadow(0 12px 22px rgba(0,0,0,.35))}
+.about-ring{position:absolute;inset:-14px;border:2.5px dashed var(--gold);border-radius:50%;animation:spin 26s linear infinite;z-index:-1}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* Shop */
+.shop{background:linear-gradient(180deg,var(--cream),#fff)}
+.shop-card{display:grid;grid-template-columns:.95fr 1.05fr;max-width:940px;margin:0 auto;background:#fff;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow);border:2px solid #f3ead9}
+@media(max-width:760px){.shop-card{grid-template-columns:1fr}}
+.shop-img{background:radial-gradient(circle at 50% 30%,var(--space3),var(--space2) 65%,var(--space));display:flex;align-items:center;justify-content:center;padding:34px;position:relative;overflow:hidden}
+.shop-img::before{content:'';position:absolute;inset:0;background-image:radial-gradient(2px 2px at 25% 25%,rgba(255,255,255,.7),transparent),radial-gradient(2px 2px at 75% 65%,rgba(255,196,46,.8),transparent),radial-gradient(1.5px 1.5px at 55% 40%,rgba(77,216,255,.7),transparent)}
+.shop-img img{position:relative;z-index:2;width:100%;max-width:300px;border-radius:12px;transform:rotate(-3deg);transition:transform .35s;filter:drop-shadow(0 16px 26px rgba(0,0,0,.35))}
+.shop-card:hover .shop-img img{transform:rotate(0) scale(1.05)}
+.shop-body{padding:38px}
+.pop-badge{display:inline-flex;align-items:center;gap:6px;background:#ffe6d6;color:#c2410c;border-radius:999px;padding:6px 15px;font-size:13px;font-weight:700}
+.shop-body h3{font-size:27px;margin-top:16px}
+.shop-body p{color:var(--muted);font-size:16px;line-height:1.8;margin-top:12px}
+.shop-price{font-size:42px;font-weight:900;margin-top:18px;font-family:'Fredoka',sans-serif;color:var(--ink)}
+.shop-price small{font-size:14px;color:var(--muted);font-weight:400;font-family:'Heebo',sans-serif}
+.shop-body .btn{margin-top:22px}
+
+/* Tickets */
+.tickets{background:#fff}
+.missions{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:26px;max-width:1080px;margin:0 auto}
+.mission{background:#fff;border-radius:var(--r-lg);overflow:hidden;border:2px solid var(--line);transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column}
+.mission:hover{transform:translateY(-8px);box-shadow:var(--shadow)}
+.mission-img{position:relative;overflow:hidden}
+.mission-img img{width:100%;display:block;aspect-ratio:16/10;object-fit:cover;transition:transform .35s}
+.mission:hover .mission-img img{transform:scale(1.05)}
+.mcode-badge{position:absolute;top:12px;inset-inline-start:12px;background:rgba(20,11,54,.82);color:var(--gold);font-family:'Fredoka',sans-serif;font-size:12px;font-weight:700;letter-spacing:1.5px;padding:5px 12px;border-radius:999px;backdrop-filter:blur(4px)}
+.mission-body{padding:22px 24px 26px;display:flex;flex-direction:column;flex:1}
+.mission h3{font-size:20px}
+.mmeta{color:var(--muted);font-size:15px;margin-top:10px;line-height:1.7;display:flex;flex-direction:column;gap:4px}
+.mission-sep{border-top:2px dashed var(--line);margin:18px -24px 0;position:relative}
+.mission-sep::before,.mission-sep::after{content:'';position:absolute;top:-9px;width:18px;height:18px;border-radius:50%;background:#fff;border:2px solid var(--line)}
+.mission-sep::before{inset-inline-start:-10px}.mission-sep::after{inset-inline-end:-10px}
+.mission-body .btn{margin-top:20px;font-size:15.5px;padding:13px}
+
+/* TV */
+.tv{background:linear-gradient(180deg,var(--space2),var(--space));position:relative;overflow:hidden}
+.tv .sec-head h2{color:#fff}.tv .sec-head p{color:#bcaef0}
+.tv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:24px;max-width:1080px;margin:0 auto;position:relative;z-index:2}
+.vid{position:relative;border-radius:var(--r-md);overflow:hidden;display:block;border:2px solid rgba(77,216,255,.28);transition:transform .25s,border-color .25s}
+.vid:hover{transform:translateY(-6px);border-color:var(--sky)}
+.vid img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+.vid .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(20,11,54,.28);transition:background .2s}
+.vid:hover .play{background:rgba(20,11,54,.06)}
+.vid .play i{width:64px;height:64px;border-radius:50%;background:var(--flame);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 26px rgba(255,106,26,.55);transition:transform .2s}
+.vid:hover .play i{transform:scale(1.1)}
+.vid .play i::after{content:'';border-style:solid;border-width:11px 0 11px 18px;border-color:transparent transparent transparent #fff;margin-inline-start:-4px;transform:scaleX(-1)}
+.tv-cta{text-align:center;margin-top:38px;position:relative;z-index:2}
+
+/* Reviews */
+.reviews{background:#fff}
+.testis{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;max-width:1080px;margin:0 auto}
+.testi{background:#fff;border:2px solid var(--line);border-radius:var(--r-md);padding:28px;position:relative;transition:transform .25s,box-shadow .25s}
+.testi:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.testi .quote{font-family:'Fredoka',sans-serif;font-size:46px;line-height:.6;color:var(--flame);opacity:.2;height:20px}
+.testi .stars{color:var(--gold);letter-spacing:3px;font-size:17px;margin-top:6px}
+.testi p{margin-top:10px;color:#443f5c;font-size:15.5px;line-height:1.85}
+.testi .who{margin-top:16px;font-weight:700;font-size:14px;color:var(--flame)}
+
+/* Contact */
+.contact{background:linear-gradient(180deg,#fff,var(--cream) 30%,#ffe9cf);position:relative;overflow:hidden}
+.contact-card{max-width:780px;margin:0 auto;background:#fff;border-radius:var(--r-lg);padding:clamp(32px,5vw,52px);box-shadow:var(--shadow);border:2px solid #f3ead9;text-align:center;position:relative;z-index:2}
+.contact-card h2{font-size:clamp(28px,4.4vw,36px)}
+.contact-card p{color:var(--muted);margin-top:12px;line-height:1.8;font-size:16.5px}
+.clines{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:28px}
+.clines a{display:inline-flex;align-items:center;gap:8px;background:#faf8fd;border:1.5px solid var(--line);border-radius:999px;padding:12px 22px;text-decoration:none;color:var(--ink);font-weight:700;font-size:15px;transition:transform .15s,border-color .15s,background .15s}
+.clines a:hover{transform:translateY(-2px);border-color:var(--flame);background:#fff6f0}
+.socials{display:flex;justify-content:center;gap:12px;margin-top:28px}
+.socials a{width:48px;height:48px;border-radius:50%;background:var(--space2);color:#fff;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:13px;font-weight:900;font-family:'Fredoka',sans-serif;transition:transform .15s,background .15s}
+.socials a:hover{transform:translateY(-3px) rotate(-6deg);background:var(--flame)}
+.loc{margin-top:20px;color:var(--muted);font-size:14px}
+
+/* Footer */
+footer{background:var(--space);color:#9d90c8;text-align:center;padding:40px clamp(20px,5%,56px) 34px;font-size:13.5px}
+footer .fl{color:#fff;font-weight:700;font-size:18px;margin-bottom:14px;font-family:'Fredoka',sans-serif}
+.foot-links{display:flex;justify-content:center;gap:10px 22px;flex-wrap:wrap;margin-bottom:14px}
+.foot-links a{color:#cabbf0;text-decoration:none;font-size:13.5px;transition:color .2s}
+.foot-links a:hover{color:var(--gold)}
+
+/* Floating WhatsApp */
+.float-wa{position:fixed;bottom:22px;inset-inline-start:22px;z-index:70;width:58px;height:58px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 26px rgba(37,211,102,.5);transition:transform .2s}
+.float-wa:hover{transform:scale(1.1)}
+.float-wa::before{content:'';position:absolute;inset:0;border-radius:50%;border:2px solid var(--wa);animation:ripple 2.2s ease-out infinite}
+@keyframes ripple{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.7);opacity:0}}
+.float-wa svg{width:30px;height:30px;fill:#fff;position:relative}
+
+/* ===== Intro: full-page disassemble → reassemble → reveal ===== */
+#introStage{position:fixed;inset:0;z-index:100000;background:radial-gradient(120% 90% at 50% 0%,var(--space3),var(--space2) 45%,var(--space) 100%);overflow:hidden;pointer-events:none;opacity:0;visibility:hidden;perspective:1100px;perspective-origin:50% 44%}
+#introStage.active{opacity:1;visibility:visible;transition:none}
+#introStage.fadeout{opacity:0;transition:opacity .6s ease}
+.intro-cam{position:absolute;inset:0;transform-style:preserve-3d}
+.intro-cam.move{animation:camDrift var(--intro-total,5s) ease-in-out forwards}
+@keyframes camDrift{0%{transform:rotateX(0) rotateY(0) scale(1)}35%{transform:rotateX(7deg) rotateY(-8deg) scale(1.07)}70%{transform:rotateX(-3deg) rotateY(4deg) scale(1.03)}100%{transform:rotateX(0) rotateY(0) scale(1)}}
+.intro-piece{position:absolute;left:0;top:0;border-radius:6px;will-change:transform;backface-visibility:hidden}
+.intro-piece.click{animation:pieceClick .2s ease-out}
+@keyframes pieceClick{0%{filter:brightness(1.8) saturate(1.15)}100%{filter:brightness(1)}}
+.intro-shock{position:absolute;left:50%;top:50%;width:10px;height:10px;border-radius:50%;border:3px solid rgba(255,196,46,.9);transform:translate(-50%,-50%);opacity:0;z-index:4;pointer-events:none}
+.intro-shock.go{animation:shockwave 1.2s cubic-bezier(.1,.6,.3,1) forwards}
+@keyframes shockwave{0%{opacity:.95;width:10px;height:10px;box-shadow:0 0 60px 20px rgba(255,196,46,.55)}100%{opacity:0;width:170vmax;height:170vmax;box-shadow:0 0 0 0 rgba(255,196,46,0)}}
+.intro-logo{position:absolute;left:50%;top:50%;z-index:5;width:min(340px,62vw);transform:translate(-50%,-50%) scale(.72);opacity:0;transition:opacity .6s ease,transform .8s cubic-bezier(.18,.9,.28,1.35);filter:drop-shadow(0 0 34px rgba(255,196,46,.55)) drop-shadow(0 10px 30px rgba(0,0,0,.5));pointer-events:none}
+.intro-logo.show{opacity:1;transform:translate(-50%,-50%) scale(1)}
+.intro-logo.show{animation:logoPulse 2.2s ease-in-out .7s infinite}
+@keyframes logoPulse{0%,100%{filter:drop-shadow(0 0 26px rgba(255,196,46,.45)) drop-shadow(0 10px 30px rgba(0,0,0,.5))}50%{filter:drop-shadow(0 0 52px rgba(255,196,46,.85)) drop-shadow(0 10px 30px rgba(0,0,0,.5))}}
+.intro-bar{position:absolute;bottom:0;inset-inline-start:0;height:5px;width:0%;z-index:6;background:linear-gradient(90deg,var(--gold),var(--flame));box-shadow:0 0 14px rgba(255,196,46,.7)}
+.intro-flash{position:absolute;inset:0;background:#fff;opacity:0;z-index:7;pointer-events:none}
+.intro-flash.go{animation:introFlash .4s ease-out}
+@keyframes introFlash{0%{opacity:.75}100%{opacity:0}}
+.intro-skip{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:100001;color:#e5dcff;font:600 13px/1 'Heebo',sans-serif;background:rgba(255,255,255,.12);padding:9px 18px;border-radius:999px;pointer-events:none;opacity:0;transition:opacity .4s;backdrop-filter:blur(6px)}
+.intro-skip.show{opacity:1}
+
+/* Reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s,transform .7s}
+.rv.on{opacity:1;transform:none}
+.no-js .rv{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  .rv{transition:none}.flame,.gil-wrap,.rocket-idle,.hero-glow,.about-ring,.float-wa::before{animation:none!important}
+  .hero-content,#gilPhoto{animation:none!important;opacity:1!important;transform:none!important}
+  .intro-piece{animation:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <a class="logo" href="#top" aria-label="גיל הטיל — דף הבית">
+    <img src="assets/logo.png" alt="גיל הטיל">
+  </a>
+  <nav aria-label="ניווט ראשי">
+    <a href="#top">דף בית</a>
+    <a href="#shop">חנות המוצרים</a>
+    <a href="#tickets">לוח ההופעות</a>
+    <a href="#tv">סרטונים</a>
+    <a href="#reviews">ביקורות</a>
+    <a href="#contact">צור קשר</a>
+  </nav>
+  <div class="head-actions">
+    <a class="head-call" href="tel:+972503340132">📞 050-334-0132</a>
+    <button class="burger" id="burger" aria-label="תפריט" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav id="mobileMenu" aria-label="תפריט נייד">
+  <a href="#top">🏠 דף בית</a>
+  <a href="#shop">🛍️ חנות המוצרים</a>
+  <a href="#tickets">🎟️ לוח ההופעות</a>
+  <a href="#tv">▶️ סרטונים לצפייה</a>
+  <a href="#reviews">⭐ ביקורות</a>
+  <a href="#contact">✉️ צור קשר</a>
+  <div class="menu-cta">
+    <a class="btn-flame" href="tel:+972503340132" style="box-shadow:0 4px 0 var(--flame-d)">📞 חייגו</a>
+    <a class="btn-wa" href="https://wa.me/972503340132" target="_blank" rel="noopener" style="box-shadow:0 4px 0 var(--wa-d)">💬 וואטסאפ</a>
+  </div>
+</nav>
+
+<section class="hero" id="top">
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="planet p1" aria-hidden="true"></div>
+  <div class="planet p2" aria-hidden="true"></div>
+  <div class="planet moon" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">🚀 הופעות · מפגשים · סדנאות לילדים</div>
+      <h1>מגיע <span class="fl">בטיל</span><br>ומתקן הכל <span class="em">כרגיל</span></h1>
+      <p class="sub">חוויה שמדליקה, מחברת ומעיפה קדימה — הומור, יצירתיות והרבה לב בכל הופעה, מפגש וסדנה.</p>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="https://tickchak.co.il/105117" target="_blank" rel="noopener">🎟️ כרטיסים להופעות</a>
+        <a class="btn btn-wa" href="https://wa.me/972503340132" target="_blank" rel="noopener">💬 דברו איתי בוואטסאפ</a>
+      </div>
+      <div class="hero-meta">
+        <button class="relaunch" id="relaunchBtn" type="button">🚀 לשגר שוב</button>
+        <button class="relaunch" id="introBtn" type="button">🧩 לפרק ולהרכיב את הדף</button>
+        <a class="next-show" href="#tickets">ההופעה הקרובה: <b>14 באוגוסט · תל אביב</b></a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="gil-wrap"><img id="gilPhoto" src="assets/gil-hero.png" alt="גיל הטיל קופץ באוויר עם אגודלים למעלה, בחליפת ספורט צבעונית"></div>
+      <div id="rocketWrap" class="rocket-idle" aria-hidden="true">
+        <svg viewBox="0 0 120 220">
+          <path d="M60 6 C84 40 90 80 90 118 L30 118 C30 80 36 40 60 6 Z" fill="#f3f4f8" stroke="#c9ccd8" stroke-width="2"/>
+          <path d="M60 6 C74 28 81 52 84 76 L36 76 C39 52 46 28 60 6 Z" fill="#ff6a1a"/>
+          <circle cx="60" cy="92" r="14" fill="#45d3ff" stroke="#0d69ab" stroke-width="4"/>
+          <circle cx="56" cy="88" r="4" fill="#d9f6ff"/>
+          <path d="M30 118 L10 156 L30 146 Z" fill="#ff6a1a"/>
+          <path d="M90 118 L110 156 L90 146 Z" fill="#ff6a1a"/>
+          <rect x="44" y="118" width="32" height="14" rx="4" fill="#c9ccd8"/>
+          <g class="flame">
+            <path d="M48 132 C48 158 60 172 60 172 C60 172 72 158 72 132 Z" fill="#ffc42e"/>
+            <path d="M53 132 C53 150 60 160 60 160 C60 160 67 150 67 132 Z" fill="#ff6a1a"/>
+          </g>
+        </svg>
+      </div>
+      <div id="countdown"><div id="countNum"></div></div>
+    </div>
+  </div>
+
+  <div class="hero-wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0,48 C240,88 480,10 720,40 C960,70 1200,18 1440,54 L1440,90 L0,90 Z" fill="#ffffff"/></svg>
+  </div>
+</section>
+
+<div id="scrollRocket" aria-hidden="true">🚀</div>
+
+<section class="about">
+  <div class="about-wrap">
+    <div class="about-txt rv">
+      <span class="tag tag-orange">גיל הטיל? כן, זה אני!</span>
+      <h2>נולדתי עם אנרגיה של שיגור 🚀</h2>
+      <p>כבר שנים שאני הופך כל מפגש לחוויה שלא שוכחים. בהופעות, במפגשים ובסדנאות אני משלב הומור, יצירתיות והרבה לב — ומעיף כל ילד קדימה, לביטחון ולחיוך גדול.</p>
+      <div class="about-tags">
+        <span>🎭 הופעות</span><span>🤝 מפגשים</span><span>🎨 סדנאות</span><span>❤️ הרבה לב</span>
+      </div>
+      <div class="about-stats">
+        <div class="st"><b>שנים</b><span>של במה ואנרגיה</span></div>
+        <div class="st"><b>מאות</b><span>הופעות ומפגשים</span></div>
+        <div class="st"><b>אלפי</b><span>ילדים מאושרים</span></div>
+      </div>
+    </div>
+    <div class="about-visual rv">
+      <div class="about-badge">
+        <div class="about-ring" aria-hidden="true"></div>
+        <img src="assets/gil-about.png" alt="גיל הטיל מחייך עם אגודלים למעלה">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="shop" id="shop">
+  <div class="sec-head rv">
+    <span class="tag tag-blue">חנות המוצרים</span>
+    <h2>מוצרים אהובים</h2>
+    <p>קצת מהקסם של גיל הטיל — גם הביתה, לכל המשפחה.</p>
+  </div>
+  <div class="shop-card rv">
+    <div class="shop-img">
+      <img src="https://gilhatil.com/assets/pzoom-cards.png" alt="קלפי העצמה של גיל הטיל">
+    </div>
+    <div class="shop-body">
+      <span class="pop-badge">⭐ הכי אהוב</span>
+      <h3>קלפי העצמה של גיל הטיל</h3>
+      <p>קלפים שמעיפים את הביטחון העצמי לחלל — משחק, שיחה והעצמה לכל המשפחה, בכל גיל.</p>
+      <div class="shop-price">₪89 <small>· כולל משלוח לכל הארץ</small></div>
+      <a class="btn btn-flame" href="https://gilhatil.com/cards" target="_blank" rel="noopener">🛒 לרכישה עכשיו</a>
+    </div>
+  </div>
+</section>
+
+<section class="tickets" id="tickets">
+  <div class="sec-head rv">
+    <span class="tag tag-gold">לוח ההופעות</span>
+    <h2>גיל הטיל בגינת החללית</h2>
+    <p>המופע שכולם מדברים עליו נוחת קרוב אליכם — הכרטיסים ב־tickchak.</p>
+  </div>
+  <div class="missions">
+    <div class="mission rv">
+      <div class="mission-img">
+        <img src="https://gilhatil.com/assets/show-1.png" alt="גיל הטיל בגינת החללית — תל אביב">
+        <span class="mcode-badge">משימה 01 · TLV</span>
+      </div>
+      <div class="mission-body">
+        <h3>בית ציוני אמריקה, תל אביב</h3>
+        <div class="mmeta"><span>🗓️ 14 באוגוסט 2026</span><span>🕐 13:00</span></div>
+        <div class="mission-sep"></div>
+        <a class="btn btn-gold" href="https://tickchak.co.il/105117" target="_blank" rel="noopener">🎟️ להזמנת כרטיסים</a>
+      </div>
+    </div>
+    <div class="mission rv">
+      <div class="mission-img">
+        <img src="https://gilhatil.com/assets/show-2.png" alt="גיל הטיל בגינת החללית — גבעתיים">
+        <span class="mcode-badge">משימה 02 · GVT</span>
+      </div>
+      <div class="mission-body">
+        <h3>תאטרון גבעתיים, גבעתיים</h3>
+        <div class="mmeta"><span>🗓️ 13 באוקטובר 2026</span></div>
+        <div class="mission-sep"></div>
+        <a class="btn btn-gold" href="https://tickchak.co.il/105117" target="_blank" rel="noopener">🎟️ להזמנת כרטיסים</a>
+      </div>
+    </div>
+    <div class="mission rv">
+      <div class="mission-img">
+        <img src="https://gilhatil.com/assets/show-3.png" alt="גיל הטיל בגינת החללית — אשקלון">
+        <span class="mcode-badge">משימה 03 · ASH</span>
+      </div>
+      <div class="mission-body">
+        <h3>מתנ"ס וולדנברג, אשקלון</h3>
+        <div class="mmeta"><span>🗓️ 14 באוקטובר 2026</span></div>
+        <div class="mission-sep"></div>
+        <a class="btn btn-gold" href="https://tickchak.co.il/105117" target="_blank" rel="noopener">🎟️ להזמנת כרטיסים</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tv" id="tv">
+  <div class="sec-head rv">
+    <span class="tag tag-cyan">סרטונים לצפייה</span>
+    <h2>גיל הטיל TV</h2>
+    <p>הצטרפו לערוץ היוטיוב — סרטונים, שירים והרפתקאות מהחלל.</p>
+  </div>
+  <div class="tv-grid">
+    <a class="vid rv" href="https://www.youtube.com/@Giltherocket" target="_blank" rel="noopener" aria-label="צפייה בסרטון של גיל הטיל">
+      <img src="https://gilhatil.com/assets/vthumb-1.png" alt="סרטון של גיל הטיל">
+      <span class="play" aria-hidden="true"><i></i></span>
+    </a>
+    <a class="vid rv" href="https://www.youtube.com/@Giltherocket" target="_blank" rel="noopener" aria-label="צפייה בסרטון של גיל הטיל והחברים">
+      <img src="https://gilhatil.com/assets/vthumb-2.png" alt="סרטון של גיל הטיל והחברים">
+      <span class="play" aria-hidden="true"><i></i></span>
+    </a>
+    <a class="vid rv" href="https://www.youtube.com/@Giltherocket" target="_blank" rel="noopener" aria-label="צפייה בסרטון של גיל הטיל בפעילות">
+      <img src="https://gilhatil.com/assets/vthumb-3.png" alt="סרטון של גיל הטיל בפעילות">
+      <span class="play" aria-hidden="true"><i></i></span>
+    </a>
+  </div>
+  <div class="tv-cta">
+    <a class="btn btn-flame rv" href="https://www.youtube.com/@Giltherocket" target="_blank" rel="noopener">▶️ לכל הסרטונים בערוץ</a>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="sec-head rv">
+    <span class="tag tag-green">ביקורות</span>
+    <h2>מה אומרים אחרי הנחיתה?</h2>
+  </div>
+  <div class="testis">
+    <div class="testi rv"><div class="quote">”</div><div class="stars">★★★★★</div><p>הילדים לא הפסיקו לצחוק ולשיר גם שבוע אחרי המופע. גיל פשוט יודע לדבר בגובה העיניים שלהם.</p><div class="who">אמא מרוצה · תל אביב</div></div>
+    <div class="testi rv"><div class="quote">”</div><div class="stars">★★★★★</div><p>אנרגיה של שיגור זה בלשון המעטה — סחף את כל הגן, כולל הצוות. כבר סגרנו אותו לשנה הבאה.</p><div class="who">גננת · מרכז</div></div>
+    <div class="testi rv"><div class="quote">”</div><div class="stars">★★★★★</div><p>קלפי ההעצמה הפכו לטקס קבוע אצלנו בבית לפני השינה. מתנה מושלמת.</p><div class="who">אבא של שני חללניקים</div></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-card rv">
+    <h2>צור קשר 🚀</h2>
+    <p>רוצים להזמין הופעה, מפגש או סדנה? דברו איתי ונרים משהו שילדים לא שוכחים.</p>
+    <div class="clines">
+      <a href="tel:+972503340132">📞 050-334-0132</a>
+      <a href="https://wa.me/972503340132" target="_blank" rel="noopener">💬 וואטסאפ</a>
+      <a href="mailto:gil@gilhatil.com">✉️ gil@gilhatil.com</a>
+    </div>
+    <div class="socials">
+      <a href="https://www.youtube.com/@Giltherocket" target="_blank" rel="noopener" aria-label="יוטיוב">YT</a>
+      <a href="https://www.instagram.com/gil_the_rocket/" target="_blank" rel="noopener" aria-label="אינסטגרם">IG</a>
+      <a href="https://www.facebook.com/share/1ANnHyKDaW/" target="_blank" rel="noopener" aria-label="פייסבוק">FB</a>
+      <a href="https://www.tiktok.com/@gilhatil" target="_blank" rel="noopener" aria-label="טיקטוק">TT</a>
+    </div>
+    <div class="loc">📍 כפר הנגיד, ישראל</div>
+  </div>
+</section>
+
+<footer>
+  <div class="fl">גיל הטיל 🚀 מגיע בטיל ומתקן הכל כרגיל</div>
+  <div class="foot-links">
+    <a href="https://gilhatil.com/pay">💳 תשלום מאובטח</a>
+    <a href="https://gilhatil.com/accessibility">הצהרת נגישות</a>
+    <a href="https://gilhatil.com/privacy">מדיניות פרטיות</a>
+    <a href="https://gilhatil.com/terms">תנאי שימוש</a>
+    <a href="https://gilhatil.com/data-deletion">מחיקת נתונים</a>
+  </div>
+  <div>כל הזכויות שמורות © 2026 גיל הטיל</div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/972503340132" target="_blank" rel="noopener" aria-label="פנייה בוואטסאפ">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+</a>
+
+<script>
+document.documentElement.classList.remove('no-js');
+/* ===== Starfield: twinkle, shooting stars, rocket exhaust ===== */
+const cv=document.getElementById('stars'),ctx=cv.getContext('2d');
+const hero=document.querySelector('.hero');
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function fit(){cv.width=hero.clientWidth;cv.height=hero.clientHeight;}
+fit();addEventListener('resize',fit);
+const stars=[];
+for(let i=0;i<170;i++)stars.push({x:Math.random(),y:Math.random(),r:Math.random()*1.6+.4,tw:Math.random()*6.28,sp:.5+Math.random()});
+let mx=.5,my=.5;
+hero.addEventListener('mousemove',e=>{const r=hero.getBoundingClientRect();mx=(e.clientX-r.left)/r.width;my=(e.clientY-r.top)/r.height;});
+let shoot=null,shootTimer=0;
+const parts=[];
+function spawnExhaust(x,y){
+  for(let i=0;i<6;i++)parts.push({x:x+(Math.random()-.5)*16,y,vx:(Math.random()-.5)*1.4,vy:2+Math.random()*3,life:1,r:4+Math.random()*7,c:Math.random()<.5?'255,106,26':'255,196,46'});
+}
+function draw(){
+  ctx.clearRect(0,0,cv.width,cv.height);
+  const ox=(mx-.5)*18,oy=(my-.5)*12;
+  stars.forEach(s=>{
+    s.tw+=.03*s.sp;
+    ctx.globalAlpha=.35+.65*Math.abs(Math.sin(s.tw));
+    ctx.fillStyle='#fff';
+    ctx.beginPath();ctx.arc(s.x*cv.width+ox*s.sp,s.y*cv.height+oy*s.sp,s.r,0,6.28);ctx.fill();
+  });
+  ctx.globalAlpha=1;
+  shootTimer--;
+  if(shootTimer<=0&&!shoot){shoot={x:Math.random()*cv.width,y:Math.random()*cv.height*.4,l:0};shootTimer=280+Math.random()*300;}
+  if(shoot){
+    shoot.l+=14;shoot.x-=14;shoot.y+=7;
+    const g=ctx.createLinearGradient(shoot.x,shoot.y,shoot.x+60,shoot.y-30);
+    g.addColorStop(0,'rgba(255,255,255,.9)');g.addColorStop(1,'rgba(255,255,255,0)');
+    ctx.strokeStyle=g;ctx.lineWidth=2;
+    ctx.beginPath();ctx.moveTo(shoot.x,shoot.y);ctx.lineTo(shoot.x+60,shoot.y-30);ctx.stroke();
+    if(shoot.l>260)shoot=null;
+  }
+  for(let i=parts.length-1;i>=0;i--){
+    const p=parts[i];p.x+=p.vx;p.y+=p.vy;p.life-=.025;p.r*=1.015;
+    if(p.life<=0){parts.splice(i,1);continue;}
+    ctx.fillStyle=`rgba(${p.c},${p.life*.6})`;
+    ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,6.28);ctx.fill();
+  }
+  requestAnimationFrame(draw);
+}
+if(!reduce)requestAnimationFrame(draw);
+else{stars.forEach(s=>{ctx.globalAlpha=.8;ctx.fillStyle='#fff';ctx.beginPath();ctx.arc(s.x*cv.width,s.y*cv.height,s.r,0,6.28);ctx.fill();});}
+
+/* ===== Rocket launch (delighter — never hides content) ===== */
+const rocket=document.getElementById('rocketWrap');
+const countNum=document.getElementById('countNum');
+let launching=false;
+
+function showCount(txt){
+  return new Promise(res=>{
+    countNum.textContent=txt;
+    countNum.classList.remove('pop');void countNum.offsetWidth;countNum.classList.add('pop');
+    setTimeout(res,700);
+  });
+}
+async function launchSequence(){
+  if(launching||reduce)return;launching=true;
+  rocket.classList.remove('rocket-idle');
+  rocket.style.transition='none';
+  rocket.style.transform='translateY(0)';
+  await showCount('3');await showCount('2');await showCount('1');await showCount('שיגור!');
+  const start=performance.now(),dur=1900,H=hero.clientHeight;
+  (function fly(now){
+    const k=Math.min((now-start)/dur,1),ease=k*k*(3-2*k);
+    const y=-ease*(H+300),sway=Math.sin(k*10)*8*(1-k);
+    rocket.style.transform=`translate(${sway}px,${y}px)`;
+    const rr=rocket.getBoundingClientRect(),hr=hero.getBoundingClientRect();
+    if(k<1&&rr.bottom>hr.top)spawnExhaust(rr.left+rr.width/2-hr.left,rr.bottom-14-hr.top);
+    if(k<1)requestAnimationFrame(fly);
+    else{
+      rocket.style.transition='transform .6s ease';rocket.style.transform='translateY(0)';
+      setTimeout(()=>rocket.classList.add('rocket-idle'),600);
+      launching=false;
+    }
+  })(start);
+}
+document.getElementById('relaunchBtn').addEventListener('click',launchSequence);
+
+/* ============================================================
+   SIGNATURE INTRO — the whole page shatters into small LEGO-like
+   pieces, they fly apart in 3D, snap back into place, then the
+   real site is revealed. Plays on load; replayable via button.
+   ============================================================ */
+const INTRO=(function(){
+  const btn=document.getElementById('introBtn');
+  const PIECES=[
+    ['#3c2896','#241a5e'],['#ff6a1a','#d24d06'],['#ffc42e','#d99e00'],
+    ['#45d3ff','#0d9fd6'],['#2a1a6e','#180f45'],['#fff7ea','#d8cdb6']
+  ];
+  const K=0.11, DAMP=0.72, RL=0.10;                 // softer spring → slower, floatier motion
+  const HOLD=420, EXPLODE=1700, ASSEMBLE=2400, REVEAL=800;
+  const TOTAL=HOLD+EXPLODE+ASSEMBLE;
+  let stage,hint,cam,fx={},items=[],running=false,done=false,raf=0,skipTimer=0,skipOn=null,onDone=null;
+
+  const pieceCss=(col,dark,studW,h)=>
+    `background:${col};box-shadow:inset 0 -5px 0 ${dark},inset 0 2px 0 rgba(255,255,255,.22),0 3px 8px rgba(0,0,0,.25);`+
+    `background-image:radial-gradient(circle at 50% 40%,rgba(255,255,255,.28) 26%,rgba(0,0,0,.16) 27%,rgba(0,0,0,.16) 30%,transparent 31%);`+
+    `background-size:${studW}px ${h}px;`;
+
+  function ensure(){
+    stage=document.getElementById('introStage');
+    if(!stage){stage=document.createElement('div');stage.id='introStage';document.body.appendChild(stage);}
+    hint=document.querySelector('.intro-skip');
+    if(!hint){hint=document.createElement('div');hint.className='intro-skip';hint.textContent='לחצו לדילוג';document.body.appendChild(hint);}
+  }
+  function build(){
+    ensure();stage.innerHTML='';items=[];
+    stage.style.setProperty('--intro-total',TOTAL+'ms');
+    cam=document.createElement('div');cam.className='intro-cam';stage.appendChild(cam);
+    fx={};
+    [['shock','intro-shock'],['flash','intro-flash'],['bar','intro-bar']].forEach(([k,cls])=>{
+      fx[k]=document.createElement('div');fx[k].className=cls;stage.appendChild(fx[k]);
+    });
+    fx.logo=document.createElement('img');
+    fx.logo.className='intro-logo';fx.logo.src='assets/logo.png';fx.logo.alt='';
+    stage.appendChild(fx.logo);
+    const W=innerWidth,H=innerHeight;
+    const targetCount=W<640?230:340;
+    const size=Math.max(30,Math.round(Math.sqrt(W*H/targetCount)));
+    const cols=Math.ceil(W/size),rows=Math.ceil(H/size),cx=W/2,cy=H/2;
+    const maxD=Math.hypot(cx,cy)||1;
+    for(let r=0;r<rows;r++){
+      let c=0;
+      while(c<cols){
+        const span=(c<cols-1&&Math.random()<.35)?2:1;
+        const [col,dark]=PIECES[Math.floor(Math.random()*PIECES.length)];
+        const gx=c*size+2, gy=r*size+2, w=size*span-4, h=size-4;
+        const el=document.createElement('div');
+        el.className='intro-piece';
+        el.style.cssText=`width:${w}px;height:${h}px;`+pieceCss(col,dark,size-4,h);
+        cam.appendChild(el);
+        const dcx=gx+w/2-cx, dcy=gy+h/2-cy, dist=Math.hypot(dcx,dcy);
+        const ang=Math.atan2(dcy,dcx)+(Math.random()-.5)*1.1;
+        items.push({el,gx,gy,
+          x:gx,y:gy,z:0,rx:0,ry:0,rz:0,vx:0,vy:0,vz:0,vrz:0,
+          tx:gx,ty:gy,tz:0,trz:0,trx:0,tryy:0,mode:'hold',clicked:false,
+          d1:dist*0.85+Math.random()*150,               // explode: center-out
+          d2:(maxD-dist)*0.7+Math.random()*130,          // assemble: edges-in
+          ex:{x:gx+Math.cos(ang)*(180+Math.random()*520), y:gy+Math.sin(ang)*(140+Math.random()*380),
+              z:-560+Math.random()*1020, rx:(Math.random()-.5)*210, ry:(Math.random()-.5)*210, rz:(Math.random()-.5)*300}});
+        c+=span;
+      }
+    }
+  }
+  const apply=it=>it.el.style.transform=
+    `translate3d(${it.x.toFixed(1)}px,${it.y.toFixed(1)}px,${it.z.toFixed(1)}px) rotateX(${it.rx.toFixed(1)}deg) rotateY(${it.ry.toFixed(1)}deg) rotateZ(${it.rz.toFixed(1)}deg)`;
+
+  function tick(){
+    for(const it of items){
+      it.vx=(it.vx+(it.tx-it.x)*K)*DAMP; it.x+=it.vx;
+      it.vy=(it.vy+(it.ty-it.y)*K)*DAMP; it.y+=it.vy;
+      it.vz=(it.vz+(it.tz-it.z)*K)*DAMP; it.z+=it.vz;
+      it.vrz=(it.vrz+(it.trz-it.rz)*K)*DAMP; it.rz+=it.vrz;
+      it.rx+=(it.trx-it.rx)*RL; it.ry+=(it.tryy-it.ry)*RL;
+      if(it.mode==='assemble'&&!it.clicked&&Math.abs(it.gx-it.x)<2&&Math.abs(it.gy-it.y)<2&&Math.abs(it.z)<4&&Math.hypot(it.vx,it.vy)<1.1){
+        it.clicked=true; it.el.classList.add('click');
+      }
+      apply(it);
+    }
+    if(running)raf=requestAnimationFrame(tick);
+  }
+  function setPhase(kind){
+    items.forEach(it=>{
+      setTimeout(()=>{
+        if(kind==='explode'){it.mode='explode';it.tx=it.ex.x;it.ty=it.ex.y;it.tz=it.ex.z;it.trz=it.ex.rz;it.trx=it.ex.rx;it.tryy=it.ex.ry;}
+        else{it.mode='assemble';it.clicked=false;it.tx=it.gx;it.ty=it.gy;it.tz=0;it.trz=0;it.trx=0;it.tryy=0;}
+      }, kind==='explode'?it.d1:it.d2);
+    });
+  }
+  function finish(){
+    if(done)return; done=true;
+    clearTimeout(skipTimer);
+    if(skipOn){['click','keydown','wheel','touchstart'].forEach(ev=>removeEventListener(ev,skipOn));skipOn=null;}
+    if(hint)hint.classList.remove('show');
+    if(stage){stage.classList.remove('active');stage.classList.add('fadeout');}
+    setTimeout(()=>{
+      running=false; cancelAnimationFrame(raf);
+      if(stage){stage.classList.remove('fadeout');stage.innerHTML='';}
+      document.body.style.overflow=''; if(btn)btn.disabled=false;
+      if(onDone){const f=onDone;onDone=null;f();}
+    },REVEAL);
+  }
+  function skip(){ if(running&&!done)finish(); }
+
+  function run(cb){
+    if(running)return;
+    if(reduce){if(cb)cb();return;}        // accessibility: no intro, site as-is
+    onDone=cb||null;
+    running=true; done=false; if(btn)btn.disabled=true;
+    document.body.style.overflow='hidden';
+    build(); items.forEach(apply); stage.classList.add('active');
+    raf=requestAnimationFrame(tick);
+    fx.bar.style.transition=`width ${TOTAL}ms linear`;
+    setTimeout(()=>{fx.bar.style.width='100%';},60);
+    setTimeout(()=>{                                    // 💥 blast-off
+      setPhase('explode');
+      fx.shock.classList.add('go');
+      cam.classList.add('move');
+    },HOLD);
+    setTimeout(()=>fx.logo.classList.add('show'),HOLD+450);   // 🚀 logo hangs in space
+    setTimeout(()=>setPhase('assemble'),HOLD+EXPLODE);
+    setTimeout(()=>fx.logo.classList.remove('show'),HOLD+EXPLODE+ASSEMBLE-900);
+    setTimeout(()=>{fx.flash.classList.add('go');finish();},HOLD+EXPLODE+ASSEMBLE);
+    skipTimer=setTimeout(()=>{
+      if(!running)return;
+      if(hint)hint.classList.add('show');
+      skipOn=()=>skip();
+      ['click','keydown','wheel','touchstart'].forEach(ev=>addEventListener(ev,skipOn,{passive:true}));
+    },600);
+  }
+  if(btn)btn.addEventListener('click',e=>{e.stopPropagation();run();});
+  return {run};
+})();
+/* On load: page disassembles & reassembles, then the rocket launches */
+addEventListener('load',()=>INTRO.run(()=>setTimeout(launchSequence,350)));
+
+/* ===== Scroll rocket progress ===== */
+const sr=document.getElementById('scrollRocket');
+addEventListener('scroll',()=>{
+  const p=scrollY/((document.body.scrollHeight-innerHeight)||1);
+  sr.style.bottom=(8+p*80)+'%';
+},{passive:true});
+
+/* ===== Header solidify ===== */
+const hdr=document.getElementById('hdr');
+addEventListener('scroll',()=>hdr.classList.toggle('solid',scrollY>60),{passive:true});
+
+/* ===== Mobile menu ===== */
+const burger=document.getElementById('burger'),menu=document.getElementById('mobileMenu');
+function toggleMenu(open){
+  const o=open??!menu.classList.contains('open');
+  menu.classList.toggle('open',o);burger.classList.toggle('open',o);
+  burger.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':'';
+}
+burger.addEventListener('click',()=>toggleMenu());
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>toggleMenu(false)));
+
+/* ===== Reveal on scroll (with fallback) ===== */
+const rvs=document.querySelectorAll('.rv');
+if('IntersectionObserver' in window){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}
+  }),{threshold:.14});
+  rvs.forEach(el=>io.observe(el));
+}else{
+  rvs.forEach(el=>el.classList.add('on'));
+}
+</script>
+</body>
+</html>
